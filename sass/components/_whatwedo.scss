@@ -1,0 +1,37 @@
+.whatwedo__title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.whatwedo__list {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.whatwedo__wrapper {
+  position: relative;
+}
+
+.whatwedo__overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  background: rgba(47, 48, 58, 0.8);
+}

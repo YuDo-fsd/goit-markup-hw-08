@@ -1,0 +1,43 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.contact-container {
+  padding: 0;
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-left: auto;
+}
+
+.icon-contact {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contact-link {
+  padding: 28px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--contacts-color);
+  font-weight: 500;
+  line-height: calc(24 / 14);
+
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

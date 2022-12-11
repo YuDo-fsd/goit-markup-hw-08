@@ -12,10 +12,16 @@
 }
 
 .contact-list {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: auto;
+  }
 }
 
 .icon-contact {

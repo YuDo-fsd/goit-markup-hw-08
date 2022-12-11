@@ -1,5 +1,21 @@
 .container {
-  width: 1200px;
-  padding: 0 15px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+
+  //mobile screen
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+  }
+  //Desktop
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+  //Desktop screen
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+  }
 }

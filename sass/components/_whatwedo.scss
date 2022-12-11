@@ -1,3 +1,13 @@
+.whatwedo-section {
+  @include section(0, 94px);
+
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+
 .whatwedo__title {
   color: var(--title-text-color);
   font-weight: 700;

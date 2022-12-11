@@ -42,6 +42,9 @@
 }
 
 /* SAMPLES */
+.samples-section {
+  @extend %section;
+}
 
 .samples {
   display: flex;

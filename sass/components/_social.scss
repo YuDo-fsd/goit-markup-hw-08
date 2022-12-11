@@ -1,3 +1,5 @@
+//social links TEAM
+
 .social {
   display: flex;
   justify-content: center;
@@ -42,7 +44,11 @@
 }
 
 .footer-social {
-  margin-right: auto;
+  margin-bottom: 60px;
+  @media screen and (min-width: $desktop) {
+    margin-right: auto;
+    margin-bottom: 0;
+  }
 }
 
 .footer-social a {

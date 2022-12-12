@@ -1,11 +1,22 @@
 .nav {
   display: flex;
   align-items: center;
+  @media screen and (max-width: $tablet) {
+    margin: 16px 0;
+  }
 }
 
 .nav-list {
   @media screen and (max-width: 767px) {
     display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 87px;
+    padding: 0;
   }
 
   @media screen and (min-width: $desktop) {
@@ -25,7 +36,7 @@
     position: relative;
     font-weight: 700;
     color: var(--accent-color);
-    
+
     &::after {
       position: absolute;
       width: 100%;
@@ -35,9 +46,8 @@
       border: 2px solid var(--accent-color);
       background-color: var(--accent-color);
       bottom: 0;
+    }
   }
-
-  
 }
 
 .nav-link {

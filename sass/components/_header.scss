@@ -16,6 +16,10 @@
     display: none;
   }
 
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+  }
+
   @media screen and (min-width: $desktop) {
     display: flex;
     align-items: center;
@@ -30,11 +34,6 @@
 }
 
 .contact-link {
-  padding: 28px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   color: var(--contacts-color);
   font-weight: 500;
   line-height: calc(24 / 14);
@@ -45,5 +44,12 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px 0;
   }
 }
